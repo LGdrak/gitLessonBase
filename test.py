@@ -1,10 +1,24 @@
 def my_two_to_the_power_of_n(n: int):
-    #TODO
-    pass
+    result = 1
+    i = 0
+    while True:
+        if i == n:
+            break
+        else:
+            result += result
+        i = i + 1
+    return result
 
 def my_three_to_the_power_of_n(n: int):
-    #TODO
-    pass
+    result = 1
+    i = 0
+    while True:
+        if i == n:
+            break
+        else:
+            result += result + result
+        i = i + 1
+    return result
 
 
 print(my_two_to_the_power_of_n(0) == 1)
